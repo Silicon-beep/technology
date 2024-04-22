@@ -1,135 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Technology Products</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        background: linear-gradient(to right, #6a3093, #a044ff);
-        color: #333;
-    }
-    header {
-        background: #ffffffcc;
-        text-align: center;
-        padding: 10px 0;
-    }
-    header nav a {
-        margin: 0 15px;
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-    }
-    .container {
-        width: 80%;
-        margin: 20px auto;
-        background: #fff;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .product {
-        margin-bottom: 20px;
-        border-bottom: 1px solid #eee;
-        padding-bottom: 20px;
-    }
-    .product:last-child {
-        border: none;
-    }
-    .product img {
-        width: 100%;
-        max-width: 300px;
-        float: left;
-        margin-right: 20px;
-    }
-    footer {
-        text-align: center;
-        padding: 10px 0;
-        background: #ffffffcc;
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-    }
-    form {
-        margin-top: 20px;
-    }
-    label {
-        display: block;
-        margin: 10px 0 5px;
-    }
-    input, textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-    }
-    input[type="submit"] {
-        background: #a044ff;
-        border: 0;
-        padding: 10px 20px;
-        color: white;
-        cursor: pointer;
-    }
-    input[type="submit"]:hover {
-        background: #6a3093;
-    }
-</style>
-<script>
-    function validateForm() {
-        var x = document.forms["contactForm"]["email"].value;
-        if (x == "") {
-            alert("Email must be filled out");
-            return false;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Gear Hub</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
         }
-    }
-</script>
+        .header, .footer {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .main {
+            padding: 20px;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .product {
+            margin: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .contact {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-<header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Product</a>
-        <a href="#">About</a>
-    </nav>
-</header>
-<div class="container">
-    <h1>Our Products</h1>
-    <div class="product">
-        <img src="https://www.example.com/path_to_laptop_image.jpg" alt="Laptop 1">
-        <h2>Laptop 1</h2>
-        <p>Description of Laptop 1. High performance for gaming and professional use.</p>
+    <div class="header">
+        <h1>Tech Gear Hub</h1>
+        <p>Welcome to your one-stop shop for the latest in technology!</p>
     </div>
-    <div class="product">
-        <img src="https://www.example.com/path_to_phone_image.jpg" alt="Phone 1">
-        <h2>Phone 1</h2>
-        <p>Description of Phone 1. Sleek design, excellent camera, and long-lasting battery.</p>
+    <div class="main">
+        <section class="product">
+            <h2>iPhone</h2>
+            <p>The latest iPhone model: Experience cutting-edge technology and a sleek design.</p>
+        </section>
+        <section class="product">
+            <h2>Samsung Tablet</h2>
+            <p>Portable and powerful, the Samsung Tablet is your perfect companion for work and play.</p>
+        </section>
+        <section class="product">
+            <h2>Laptop</h2>
+            <p>Our laptops are equipped with high performance hardware to ensure great productivity.</p>
+        </section>
+        <section class="product">
+            <h2>Projector</h2>
+            <p>Make your presentations stand out with our high-resolution projectors.</p>
+        </section>
+        <section class="product">
+            <h2>Speakers</h2>
+            <p>Experience sound like never before with our range of powerful speakers.</p>
+        </section>
     </div>
-    <div class="product">
-        <img src="https://www.example.com/path_to_speaker_image.jpg" alt="Speaker 1">
-        <h2>Speaker 1</h2>
-        <p>Description of Speaker 1. Perfect for home entertainment with excellent sound quality.</p>
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@techgearhub.com</p>
+        <p>Phone: 123-456-7890</p>
     </div>
-    <div class="product">
-        <img src="https://www.example.com/path_to_headphones_image.jpg" alt="Headphones 1">
-        <h2>Headphones 1</h2>
-        <p>Description of Headphones 1. Over-ear, noise-cancelling, superior sound for music lovers.</p>
+    <div class="footer">
+        <p>&copy; 2024 Tech Gear Hub, Inc.</p>
     </div>
-    <div class="product">
-        <img src="https://www.example.com/path_to_projector_image.jpg" alt="Projector 1">
-        <h2>Projector 1</h2>
-        <p>Description of Projector 1. Compact, suitable for home cinema use with high-definition clarity.</p>
-    </div>
-</div>
-<footer>
-    <p>&copy; 2024 Tech Company</p>
-    <form name="contactForm" onsubmit="return validateForm()" method="post">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Your message"></textarea>
-        <input type="submit" value="Submit">
-    </form>
-</footer>
+
+    <script>
+        // Simple script for future interaction enhancement
+        console.log("Welcome to Tech Gear Hub!");
+    </script>
 </body>
 </html>
+
